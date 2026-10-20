@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Math Differentiator - Quadratic Equations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📐 AI Math Differentiator</h1>
+        <p class="subtitle">Topic: <strong>Quadratic Equations</strong></p>
+
+        <!-- Sidebar / Config -->
+        <div class="config-box">
+            <label for="apiKey">Enter OpenRouter or OpenAI API Key:</label>
+            <input type="password" id="apiKey" placeholder="sk-or-v1-..." />
+        </div>
+
+        <!-- Level Selector -->
+        <div class="level-selector">
+            <h3>Select Difficulty Level:</h3>
+            <div class="radio-group">
+                <label><input type="radio" name="level" value="level1" checked> Level 1: Foundation</label>
+                <label><input type="radio" name="level" value="level2"> Level 2: Standard</label>
+                <label><input type="radio" name="level" value="level3"> Level 3: Advanced</label>
+            </div>
+        </div>
+
+        <button id="generateBtn">✨ Generate Math Task</button>
+
+        <!-- Result Box -->
+        <div id="output" class="output-box hidden">
+            <div id="loading" class="spinner hidden">Generating problem...</div>
+            <div id="content"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
